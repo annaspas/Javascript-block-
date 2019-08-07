@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script> 
+  // Принимается число -> посчитать факториал числа, для отрицательных не определен, для дробных не определен. Для 0 = 1. Для всех остальных перемножение всех чисел включая его самого. Факториал считается для чисед до 12ю Если число больше выводится "Число слишком велико"
+
+  var answer = prompt('Enter the number');
+    number = +answer;
+
+    if (number <= 0 || number %2 ==0 && number %2 !=0) {
+      alert('не определено!')
+    } else if (number <= 12) {
+      function factorial(n) {
+  return (n != 1) ? n * factorial(n - 1) : 1;
+}
+alert( factorial(number) ) 
+    } else {
+      alert ('Число слишком велико!')
+    }
+  </script>
+</body>
+</html>
