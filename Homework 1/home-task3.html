@@ -10,11 +10,13 @@
   <script>
     // Принимается число -> вернуть положительное оно или отрицательное
 
-    var answer = prompt('Enter the number');
-    number = +answer;
+    var answer = +prompt('Enter the number');
+    // Или более правильный вариант
+    // Убрали лишную строку и преобразовали к числу сразу в переменной
+    // var answer = Number(prompt('Enter the number'));
 
     if (number < 0) {
-      alert(' отрицательное число!')
+      alert('отрицательное число!')
     } else {
       alert('положительное число!')
     }
