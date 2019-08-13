@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // Задание 1. Функция принимает число n(проверить что n является числом в противном случае завершить работу функции). Функция возвращает строку чисел от 1 до n через разделитель ','. Если число меньше 1 то выдается строка (например n = -2 строка должна быть '1,0,-1,-2').
+
+    function task1 (n) {
+      var answer = prompt ('enter the value');
+        var n = answer;
+        
+        var result = new String();
+            do {
+                if (n > 1)
+                {
+                for(var i = 1; i <= n; i++)
+                {
+                    if (i < n)
+                    result = result  + i.toString() + ",";
+                    else 
+                    result = result  + i.toString();
+                }
+                }
+                else {
+                for(var i = n; i <= 1; i++)
+                {
+                    if (i < 1)
+                    result = result  + i.toString() + ",";
+                    else
+                    result = result  + i.toString();
+                }
+                } 
+                console.log(result); 
+        } while (typeof n  === Number)
+          return n;
+    }
+    task1();
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Функция принимает количество часов (проверить что это число). Функция возвращает количество секунд в переданых часах.
+
+    function task3 (hoursQuantity) {
+      
+        var n = hoursQuantity;
+        do {
+            if (n>=0) {
+                n = n * 360;
+                console.log(n);
+            } else {
+                console.log('is undefined')
+            }
+        } while (typeof n=== Number)
+
+        return n;
+    }
+
+    task3();
+
+  </script>
+</body>
+</html>
