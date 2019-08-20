@@ -3,7 +3,7 @@
 // Преобразование сразу в переменной
 var n = +prompt('enter the number between 0 & 59');
 
-// Не вижу смысла в do...while
+// Не вижу смысла в do...while, всё равно проверки внутри условий одни и те-же
 
 if (n >= 0 && n <= 14) {
   alert(n + ' ' + 'min'+' ' + 'this is the 1st quarter');

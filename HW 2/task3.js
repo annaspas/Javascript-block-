@@ -4,7 +4,7 @@
 var n = +prompt('enter the quantity of hours to revert this in seconds');
 // Лишняя переменная была
 
-// Бесполезный do...while
+// Бесполезный do...while, всё равно в условиях вся логика, зачем одно и тоже несколько раз прогонять в цикле
 if (Number.isNaN(n)) {
   alert('is not a number');
 } else {

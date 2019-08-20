@@ -3,7 +3,7 @@
 var n = Number(prompt('enter the value'));
 var result = '';
 
-// Лучше было бы сделать проверку вот так, do...while очень редко используется
+// Лучше было бы сделать проверку вот так, do...while очень редко используется и тут не особо он нужен был
 if (Number.isNaN(n)) {
   alert('Is not a number');
 } else {
