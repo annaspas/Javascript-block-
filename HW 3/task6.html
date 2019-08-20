@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    // Задание 6. Функция принимает число n. Функция возвращает факториал данного числа. Факториал отрицательного числа - возвращает NaN. Факториал дробного числа возвращает NaN. Прповерть что аргумент является числом.
+
+    function fact(x) 
+{
+   if (!Number.isInteger(x)) return NaN;
+   if (x < 0) return NaN;
+   if (x == 0) return 1;
+   
+   return x * fact(x-1);
+}
+   console.log(fact());
+
+  </script>
+</body>
+</html>
