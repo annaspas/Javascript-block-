@@ -12,10 +12,13 @@
   <script>
     // Написать программу - через промпт принимается число -> проверить простое ли оно
 
-    var answer = prompt('Enter the number');
-    number = +answer;
+    var answer = +prompt('Enter the number');
+    // Или более правильный вариант
+    // Убрали лишную строку и преобразовали к числу сразу в переменной
+    // var answer = Number(prompt('Enter the number'));
 
-    if (number % 2 >= 1) {
+    // 2 - тоже простое
+    if (answer % 2 >= 1 || answer === 2) {
       alert('простое число!')
     } else {
       alert('Не простое число!')

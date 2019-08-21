@@ -7,38 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <script>
-        // - Задание 1. Скрипт принимает число n(проверить что n является числом в противном случае завершить работу цикла). цикл возвращает строку чисел от 1 до n через разделитель ','. Если число меньше 1 то выдается строка (например n = -2 строка должна быть '1,0,-1,-2').
-
-        var answer = prompt ('enter the value');
-        var n = answer;
-        
-        var result = new String();
-
-            do {
-                if (n > 1)
-                {
-                for(var i = 1; i <= n; i++)
-                {
-                    if (i < n)
-                    result = result  + i.toString() + ",";
-                    else 
-                    result = result  + i.toString();
-                }
-                }
-                else {
-                for(var i = n; i <= 1; i++)
-                {
-                    if (i < 1)
-                    result = result  + i.toString() + ",";
-                    else
-                    result = result  + i.toString();
-                }
-                } 
-                console.log(result); 
-        } while (n === Number)
-        
-
-        </script>
+<script src="./task1.js"></script>
 </body>
 </html>
