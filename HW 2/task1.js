@@ -19,5 +19,6 @@ if (Number.isNaN(n)) {
       result = result + i + (i > n ? ',' : '');
     }
   }
+
   alert(result);
 }
