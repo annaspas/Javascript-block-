@@ -10,11 +10,14 @@
   <script>
     // Принимается число -> вернуть целое ли оно или дробное
 
-    var answer = prompt('Enter the number');
-    number = +answer;
+    var answer = +prompt('Enter the number');
+    // Или более правильный вариант
+    // Убрали лишную строку и преобразовали к числу сразу в переменной
+    // var answer = Number(prompt('Enter the number'));
 
-    if (number %2 ===0) {
-      alert(' целое число!')
+    // 1 - тоже целое, modulus выдаст 1
+    if (answer % 2 === 0 || answer === 1) {
+      alert('целое число!')
     } else {
       alert('дробное число!')
     }
